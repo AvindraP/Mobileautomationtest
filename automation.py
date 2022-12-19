@@ -30,39 +30,39 @@ with open('data.csv','r') as csv_file:
                 time.sleep(3)
 
                 # click myaccount
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[5]'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[5]'))).click()
                 time.sleep(1)
                 
                 # click profile
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.TextView[1]'))).click()
                 time.sleep(1)
                 
                 # # Click add number
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.TextView[2]'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.TextView[2]'))).click()
                 time.sleep(1)
                 
                 # # click country code
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout'))).click()
                 time.sleep(1)
                 
                 # # type country
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.EditText'))).send_keys("pakistan")
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.EditText'))).send_keys("pakistan")
                 time.sleep(1)
                 
                 # click pakistan
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.RelativeLayout'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.RelativeLayout'))).click()
                 time.sleep(1)
                 
                 # paste number
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText'))).send_keys(line[0])
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/android.widget.EditText'))).send_keys(line[0])
                 time.sleep(1)
                 
                 # click verify
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.RelativeLayout[2]'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.RelativeLayout[2]'))).click()
                 time.sleep(1)
                 
                 # verify otp field
-                WebDriverWait(driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText'))).click()
+                WebDriverWait(self.driver,10).until(EC.element_to_be_clickable(("xpath",'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.view.ViewGroup/android.widget.EditText'))).click()
                 # time.sleep(1)
 
                 count = count + 1
