@@ -1,4 +1,4 @@
-import self as self
+from self import self
 from appium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
